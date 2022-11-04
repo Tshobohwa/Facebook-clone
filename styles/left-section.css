@@ -1,0 +1,54 @@
+.left-section{
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    display: block;
+    float: left;
+    width: 25%;
+    overflow: scroll;
+    height: 80vh;
+}
+.left-section button{
+    height: 40px;
+    width: 280px;
+    margin: 0px 10px 5px 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;  
+    border-radius: 8px;  
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.left-section button:hover{
+    background-color: rgb(220, 220, 220);
+}
+.left-section button img{
+    height: 18px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.home .account img{
+    height: 30px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+.menu-button,
+.shortcuts-button,
+.groups-button{
+    font-weight: bolder;
+    font-size: 12px;
+}
+.menu-button p,
+.shortcuts-button p,
+.groups-button p{
+    font-size: 18px;
+}
+
+.home,
+.menu,
+.groups{
+    margin-bottom: 10px;
+}

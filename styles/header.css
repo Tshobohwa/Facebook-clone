@@ -1,0 +1,114 @@
+
+.header{
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 200;
+    box-shadow:  0px 0px 4px #8888;
+}
+.left-header{
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.middle-header{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+.right-header{
+    display: flex;
+    align-items: center;
+}
+.profile-picture{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: top;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.facebook-logo{
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.search-button{
+    height: 42px;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    border-style: none;
+    width: 40px;
+    cursor: pointer;
+}
+.search-icon{
+    height: 15px;
+    width: 15px;
+}
+.search-bar{
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: none;
+    background-color: #efefef;
+    width: 400px;    
+    font-size: 14px;
+}
+.search-bar:focus{
+    outline: none;
+}
+.notifications-icon-box,
+.messages-icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #efefef;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 30;
+}
+
+.notifications-icon,
+.messages-icon{
+    height: 20px;
+    width: 20px;
+}
+.notifications-icon-box .tooltip,
+.messages-icon-box .tooltip,
+.account-image .tooltip{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    bottom: -35px;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: background-color, opacity 0.15s;
+    pointer-events: none;
+    
+}
+.notifications-icon-box:hover .tooltip,
+.messages-icon-box:hover .tooltip,
+.account-image:hover .tooltip{
+    opacity: 1;
+}
+.notifications-icon-box:hover,
+.messages-icon-box:hover{
+    background-color: #8888;
+}

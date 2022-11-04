@@ -1,0 +1,417 @@
+.actuality{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.middle-section{
+    display: block;
+    width: 50%;
+    overflow: scroll;
+    height: 80vh;
+
+}
+.statuts{
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+.more-stories{
+    position: absolute;
+    right: -20px;
+    top: 80px;
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s;
+    box-shadow: 0px 0px 3px 1px #8888;
+}
+
+.more-stories:hover{
+    background-color: rgb(240, 240, 240);
+}
+.more-icon{
+    height: 20px;
+    width: 20px;
+}
+.statut-image{
+    object-fit: cover;
+    height: 200px;
+    width: 130px;
+    border-radius: 10px;
+    transition: transform 0.15s;
+}
+.create-statut{
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 130px;
+    z-index: 50;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.add{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+    left: 48px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    z-index: 30;
+}
+.add-statut,
+.statut-box{
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    width: 130px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 3px 3px #8888;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.story-author{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.author-profile,
+.publisher-profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 24px;
+    object-fit: cover;
+    object-position: top;
+    border-style: solid;
+    border-width: 4px;
+    border-color: blue;
+}
+.darc{
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 40;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.add-statut:hover .darc,
+.statut-box:hover .darc{
+    cursor: pointer;
+    opacity: 1;
+}
+.add-statut:hover .statut-image,
+.statut-box:hover .statut-image{
+    transform: scale(1.07);
+}
+
+.whatsup{
+    margin: auto;
+    justify-content: center;
+    height: 120px;
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px #8888;
+}
+ .whatsup-top{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.separating-line{
+    height: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #8888;
+}
+ .whatsup-bottom{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .whatsup-input{
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #efefef;
+    width: 380px;    
+    font-size: 14px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.whatsup button{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    border-style: none;
+    background-color: white;
+    border-radius: 10px;
+    transition: background-color 0.15s;
+}
+.whatsup button:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+.whatsup-icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.create-room{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 1px #8888;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.create-room button{
+    position: relative;
+    margin-left: 20px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+.friend-profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
+}
+.friend{
+    position: relative;
+}
+.online{
+    position:absolute;
+    right: 4px;
+    bottom: 4px;
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+    background-color: burlywood;
+}
+.more-friends{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 0px 0px 3px 1px #8888;
+    transition: background-color 0.15s;
+    right: 20px;
+}
+.more-friends:hover{
+    background-color: rgb(240, 240, 240);
+}
+.publication{
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px #8888;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.publication-header{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+.publication-type{
+    height: 40px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    color: rgb(101, 103, 107);
+}
+.publication-header-left{
+    width: 60px;
+}
+.publication-header-middle{
+    justify-content: left;
+    display: flexbox;
+    flex: 1;
+}
+.publisher-name{
+    font-size: 16px;
+    font-weight: bolder;
+    transition: text-decoration 0.15s;
+    cursor: pointer;
+}
+.publisher-name:hover{
+    text-decoration: underline;
+}
+.publication-destination img{
+    height: 12px;
+    width: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.publication-informations{
+    display: flex;
+    color: rgb(101, 103, 107);
+}
+.publication-time{
+    margin-right: 5px;
+}
+.publication-header-right button{
+    border-radius: 20px;
+    border-style: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color 0.15;
+    cursor: pointer;
+}
+.publication-header-right button:hover{
+    background-color: #efefef;
+}
+.publication-header-right button img{
+    height: 25px;
+    width: 25px;
+}
+.publication-comment{
+    padding: 10px;
+}
+
+.publication-image img{
+    width: 100%;
+    padding-bottom: 0px;
+}
+.publication-footer-top {
+    height: 50px;
+}
+.publication-footer-bottom{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.likes-icons img{
+    height: 20px;
+    width: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 12px;
+    border-color: white;
+}
+.first{
+    z-index: 30;
+}
+.second{
+    margin-left: -9px;
+    z-index: 20;
+}
+.third{
+    margin-left: -9px;
+    z-index: 10;
+}
+.likes-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.amount{
+    font-size: 14px;
+    color: rgb(101, 103, 107);
+    margin-top: 5px;
+}
+.comments-and-shares{
+    display: flex;
+    font-size: 14px;
+    color: rgb(101, 103, 107);
+}
+.comments,
+.shares{
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: text-decoration 0.3s;
+
+}
+.comments:hover,
+.shares:hover{
+    text-decoration: underline;
+}
+.likes-amounts{
+    display: flex;
+}
+.reaction-button{
+    height: 40px;
+    width: 150px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15;
+    cursor: pointer;
+}
+.reaction-button:hover{
+    background-color: #efefef;
+}
+.reaction-button img{
+    height: 20px;
+    margin-right: 10px;
+}
